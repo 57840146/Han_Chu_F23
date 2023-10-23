@@ -15,7 +15,7 @@ set(SOURCE_FILES
 add_definitions(-DBV_DEBUG=2)
 add_definitions(-DBEAVER_LIB)
 
-include_directories(${PROJECT_SOURCE_DIR})
+include_directories(../Beaver)
 include_directories(../glfw/include)
 
 add_library(Beaver SHARED ${HEADER_FILES} ${SOURCE_FILES})
