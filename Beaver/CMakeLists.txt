@@ -2,23 +2,24 @@ set(HEADER_FILES
 	include/Beaver.h
 	BeaverApp.h
 	Utilities.h
+	GameWindow.h
+	WindowImplementation.h
+	GLFWCode/GLFWImplementation.h
 )
 
 set(SOURCE_FILES
-	placeholder.cpp
+	GameWindow.cpp
+	GLFWCode/GLFWImplementation.cpp
 )
 
 add_definitions(-DBV_DEBUG=2)
 add_definitions(-DBEAVER_LIB)
 
-if(WIN32)
-	add_definitions(-DBEAVER_MSCPP)
-elseif(LINUX)
-	add_definitions(-DBEAVER_LINUX)
-elseif(APPLE)
-	add_definitions(-DBEAVER_APPLE)
-endif()
+include_directories(${PROJECT_SOURCE_DIR})
+include_directories(../glfw/include)
 
 add_library(Beaver SHARED ${HEADER_FILES} ${SOURCE_FILES})
 
 target_precompile_headers(Beaver PRIVATE pch.h)
+
+target_link_libraries(Beaver glfw)

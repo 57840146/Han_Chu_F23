@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\14242\Desktop\Game Engine\Game_HC\glfw_project\CMakeFiles\3320ba59a7d9fa8b54f73d272a9882a0\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\14242\Desktop\Game Engine\Game_HC\glfw\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\14242\Desktop\Game Engine\Game_HC\glfw\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\14242\Desktop\Game Engine\Game_HC\glfw\CMake\GenerateMappings.cmake" />
+    <None Include="C:\Users\14242\Desktop\Game Engine\Game_HC\glfw_project\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{FC8F8245-83FD-3979-8E9C-0DB7ECA3DCCD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{CC47BC74-B571-3EAF-931F-618FD86F4EE9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

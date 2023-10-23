@@ -1,0 +1,4 @@
+C:/Users/14242/Desktop/Game Engine/Game_HC/glfw_project/CMakeFiles/ALL_BUILD.dir
+C:/Users/14242/Desktop/Game Engine/Game_HC/glfw_project/CMakeFiles/ZERO_CHECK.dir
+C:/Users/14242/Desktop/Game Engine/Game_HC/glfw_project/src/CMakeFiles/glfw.dir
+C:/Users/14242/Desktop/Game Engine/Game_HC/glfw_project/src/CMakeFiles/update_mappings.dir

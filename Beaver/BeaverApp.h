@@ -1,11 +1,12 @@
 #pragma once
 
 #include"Utilities.h"
+#include"GameWindow.h"
 
 namespace bv {
 
 	template<typename T>
-	class BEAVER_API BeaverApp {
+	class BeaverApp {
 	public:
 		static void Init();
 		static void RunInterface();
@@ -18,6 +19,8 @@ namespace bv {
 		BeaverApp();
 
 		inline static BeaverApp* sInstance{ nullptr };
+
+		GameWindow mWindow;
 
 		bool mShouldContinue{ true };
 	};

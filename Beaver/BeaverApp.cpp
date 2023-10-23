@@ -21,8 +21,13 @@ namespace bv {
 
 	template<typename T>
 	void BeaverApp<T>::Run(){
+		mWindow.Create("Game_HC", 1000, 800);
+
 		while (mShouldContinue) {
 			OnUpdate();
+
+			mWindow.SwapBuffers();
+			mWindow.PollEvents();
 		}
 	}
 
