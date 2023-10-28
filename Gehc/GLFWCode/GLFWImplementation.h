@@ -3,7 +3,7 @@
 #include"../WindowImplementation.h"
 #include"GLFW/glfw3.h"
 
-namespace bv {
+namespace hc {
 	class GLFWImplementation :public WindowImplementation {
 	public:
 		GLFWImplementation();

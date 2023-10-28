@@ -1,26 +1,26 @@
 #include"pch.h"
-#include "BeaverApp.h"
+#include "GehcApp.h"
 
-namespace bv {
+namespace hc {
 
 	template<typename T>
-	BeaverApp<T>::BeaverApp(){
+	GehcApp<T>::GehcApp(){
 	}
 
 	template<typename T>
-	void BeaverApp<T>::Init() {
+	void GehcApp<T>::Init() {
 		if (sInstance == nullptr) {
 			sInstance = new T;
 		}
 	}
 
 	template<typename T>
-	void BeaverApp<T>::RunInterface() {
+	void GehcApp<T>::RunInterface() {
 		sInstance->Run();
 	}
 
 	template<typename T>
-	void BeaverApp<T>::Run(){
+	void GehcApp<T>::Run(){
 		mWindow.Create("Game_HC", 1000, 800);
 
 		while (mShouldContinue) {
@@ -32,6 +32,6 @@ namespace bv {
 	}
 
 	template<typename T>
-	void BeaverApp<T>::OnUpdate() {
+	void GehcApp<T>::OnUpdate() {
 	}
 }

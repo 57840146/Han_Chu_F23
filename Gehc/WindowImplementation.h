@@ -2,7 +2,7 @@
 
 #include"pch.h"
 
-namespace bv {
+namespace hc {
 	class WindowImplementation {
 	public:
 		virtual void Create(const std::string& name, int width, int height) = 0;

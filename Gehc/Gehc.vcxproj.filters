@@ -21,10 +21,10 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BeaverApp.h">
+    <ClInclude Include="GehcApp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Beaver.h">
+    <ClInclude Include="include\Gehc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GameWindow.h">

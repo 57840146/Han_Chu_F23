@@ -8,6 +8,6 @@ set(SOURCE_FILES
 
 add_executable(Game_HC ${HEADER_FILES} ${SOURCE_FILES})
 
-target_link_libraries(Game_HC Beaver)
+target_link_libraries(Game_HC Gehc)
 
-include_directories(../Beaver/include)
+include_directories(../Gehc/include)

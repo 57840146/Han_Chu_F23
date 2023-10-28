@@ -2,13 +2,13 @@
 #include"GameWindow.h"
 #include"GLFWCODE/GLFWImplementation.h"
 
-namespace bv {
+namespace hc {
 	GameWindow::GameWindow(){
-#ifdef BEAVER_MSCPP
+#ifdef GEHC_MSCPP
 		mImplementation = std::unique_ptr<WindowImplementation>{ new GLFWImplementation };
-#elif BEAVER_APPLE
+#elif GEHC_APPLE
 		mImplementation = std::unique_ptr<WindowImplementation>{ new GLFWImplementation };
-#elif BEAVER_LINUX
+#elif GEHC_LINUX
 		mImplementation = std::unique_ptr<WindowImplementation>{ new GLFWImplementation };
 #endif
 	}

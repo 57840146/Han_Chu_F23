@@ -2,7 +2,7 @@
 #include"GLFWImplementation.h"
 
 
-namespace bv {
+namespace hc {
 	GLFWImplementation::GLFWImplementation(){
 		glfwInit();
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);

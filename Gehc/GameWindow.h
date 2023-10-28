@@ -4,8 +4,8 @@
 #include"Utilities.h"
 #include"WindowImplementation.h"
 
-namespace bv {
-	class BEAVER_API GameWindow {
+namespace hc {
+	class GEHC_API GameWindow {
 	public:
 		GameWindow();
 		void Create(const std::string& name, int width, int height);

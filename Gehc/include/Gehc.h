@@ -1,4 +1,4 @@
 #pragma once
 
-#include"../BeaverApp.h"
+#include"../GehcApp.h"
 #include"../Utilities.h"

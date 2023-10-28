@@ -3,10 +3,10 @@
 #include"Utilities.h"
 #include"GameWindow.h"
 
-namespace bv {
+namespace hc {
 
 	template<typename T>
-	class BeaverApp {
+	class GehcApp {
 	public:
 		static void Init();
 		static void RunInterface();
@@ -16,9 +16,9 @@ namespace bv {
 
 		friend typename T;
 	private:
-		BeaverApp();
+		GehcApp();
 
-		inline static BeaverApp* sInstance{ nullptr };
+		inline static GehcApp* sInstance{ nullptr };
 
 		GameWindow mWindow;
 
@@ -26,4 +26,4 @@ namespace bv {
 	};
 }
 
-#include"BeaverApp.cpp"
+#include"GehcApp.cpp"

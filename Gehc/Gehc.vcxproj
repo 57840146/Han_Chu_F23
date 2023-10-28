@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{589f5053-e300-470b-87ac-7b872a93476d}</ProjectGuid>
+    <ProjectGuid>{DCCDA3FF-CD51-4933-AE94-4DC74F0BC6FE}</ProjectGuid>
     <RootNamespace>Beaver</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Gehc</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -106,11 +107,11 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>&lt;different options&gt;;BEAVER_LIB;%(PreprocessorDefinitions);BEAVER_MSCPP</PreprocessorDefinitions>
+      <PreprocessorDefinitions>&lt;different options&gt;;GEHC_LIB;%(PreprocessorDefinitions);GEHC_MSCPP</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)Beaver;$(SolutionDir)glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Gehc;$(SolutionDir)glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -137,10 +138,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="BeaverApp.h" />
+    <ClInclude Include="GehcApp.h" />
     <ClInclude Include="GameWindow.h" />
     <ClInclude Include="GLFWCode\GLFWImplementation.h" />
-    <ClInclude Include="include\Beaver.h" />
+    <ClInclude Include="include\Gehc.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Utilities.h" />
     <ClInclude Include="WindowImplementation.h" />

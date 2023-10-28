@@ -1,7 +1,7 @@
-#include"Beaver.h"
+#include"Gehc.h"
 
 #include <iostream>
-class MyGame : public bv::BeaverApp<MyGame> {
+class MyGame : public hc::GehcApp<MyGame> {
 public:
 
 	virtual void OnUpdate() override {
@@ -10,4 +10,4 @@ public:
 
 };
 
-BEAVER_APPLICATION_START(MyGame);
+GEHC_APPLICATION_START(MyGame);
