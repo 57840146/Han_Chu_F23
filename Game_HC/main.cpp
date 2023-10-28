@@ -5,7 +5,7 @@ class MyGame : public hc::GehcApp<MyGame> {
 public:
 
 	virtual void OnUpdate() override {
-		std::cout << "Beaver running" << std::endl;
+		std::cout << "Gehc running" << std::endl;
 	}
 
 };
