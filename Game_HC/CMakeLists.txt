@@ -1,6 +1,6 @@
 set(HEADER_FILES
 	
-	)
+)
 
 set(SOURCE_FILES
 	main.cpp
