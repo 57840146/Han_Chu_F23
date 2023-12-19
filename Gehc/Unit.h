@@ -18,6 +18,8 @@ namespace hc {
 		void SetCoords(int x, int y);
 		void UpdateXCoord(int amount);
 		void UpdateYCoord(int amount);
+
+		//Picture mImage;
 	private:
 		Picture mImage;
 		int mXPosition;

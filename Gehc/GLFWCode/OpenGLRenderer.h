@@ -1,5 +1,5 @@
 #pragma once
-#include"pch.h"
+
 #include"RendererImplementation.h"
 
 namespace hc {

@@ -7,9 +7,10 @@
 
 namespace hc {
 	OpenGLPicture::OpenGLPicture(const std::string& fileP){
+        std::cout << fileP.c_str() << std::endl;
         //unsigned int texture;
         glGenTextures(1, &mTexture);
-        glBindTexture(GL_TEXTURE_2D, mTexture);
+        //lBindTexture(GL_TEXTURE_2D, mTexture);
 
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);

@@ -8,25 +8,26 @@ public:
 	}
 
 	virtual void OnUpdate() override {
-		//std::cout << "Gehc running" << std::endl;
-		//Draw(x,y,mPic);
-
+		//std::cout << "running" << std::endl;
+		//Draw(x, y, mPic);
 		Draw(mUnit);
 	}
 
 	void OnKeyPress(const hc::KeyPressed& e) {
 		if (e.GetKeyCode() == GEHC_KEY_RIGHT) {
+			std::cout << "testr" << std::endl;
 			//x += 50;
 			mUnit.UpdateXCoord(50);
 		}
 		else if (e.GetKeyCode() == GEHC_KEY_LEFT) {
 			//x -= 50;
+			std::cout << "testl" << std::endl;
 			mUnit.UpdateXCoord(-50);
 		}
 	}
 private:
-	hc::Picture mPic{ "../Assets/Pictures/test.png" };
-	hc::Unit mUnit{ "../Assets/Pictures/test.png",100,500 };
+	//hc::Picture mPic{ "../Assets/Pictures/test.png"};
+	hc::Unit mUnit{ "../Assets/Pictures/images.png",100,500 };
 
 	int x{ 100 };
 	int y{ 100 };

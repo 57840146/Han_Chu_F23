@@ -2,6 +2,7 @@
 #include"Renderer.h"
 #include"GLFWCode/OpenGLRenderer.h"
 
+
 namespace hc {
 	Renderer::Renderer() {
 		#ifdef GEHC_MSCPP

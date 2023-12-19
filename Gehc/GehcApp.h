@@ -28,6 +28,7 @@ namespace hc {
 		void DefaultWindowCloseHandler();
 
 		friend typename T;
+
 	private:
 		GehcApp();
 

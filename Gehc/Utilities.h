@@ -23,7 +23,7 @@
 
 #define GEHC_APPLICATION_START(ClassName) \
 int main(){ \
-	ClassName game; \
-	game.Run(); \
+	ClassName::Init(); \
+	ClassName::RunInterface(); \
 	return 0; \
 }

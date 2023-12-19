@@ -1,7 +1,7 @@
 #pragma once
-#include"pch.h"
+//#include"pch.h"
 #include"Utilities.h"
-#include"../Gehc/PictureImplementation.h"
+#include"PictureImplementation.h"
 namespace hc {
 	class GEHC_API Picture {
 	public:

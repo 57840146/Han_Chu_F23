@@ -6,7 +6,6 @@
 
 namespace hc {
 	OpenGLShader::OpenGLShader(const std::string& vertexSF, const std::string& fragmentSF){
-
 		std::string vertexString{ ReadWholeFile(vertexSF) };
 		std::string fragmentString{ ReadWholeFile(fragmentSF) };
 		const char* vertexShaderSource = vertexString.c_str();
@@ -57,6 +56,8 @@ namespace hc {
 		const char* vertexShaderSource = vertexString.c_str();
 		const char* fragmentShaderSource = fragmentString.c_str();
 
+		std::cout << vertexShaderSource << std::endl;
+		std::cout << fragmentShaderSource << std::endl;
 		unsigned int vertexShader;
 		vertexShader = glCreateShader(GL_VERTEX_SHADER);
 		glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
