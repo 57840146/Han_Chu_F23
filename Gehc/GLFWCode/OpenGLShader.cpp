@@ -11,6 +11,9 @@ namespace hc {
 		const char* vertexShaderSource = vertexString.c_str();
 		const char* fragmentShaderSource = fragmentString.c_str();
 
+		std::cout << vertexShaderSource << std::endl;
+		std::cout << fragmentShaderSource << std::endl;
+
 		unsigned int vertexShader;
 		vertexShader = glCreateShader(GL_VERTEX_SHADER);
 		glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
@@ -56,8 +59,6 @@ namespace hc {
 		const char* vertexShaderSource = vertexString.c_str();
 		const char* fragmentShaderSource = fragmentString.c_str();
 
-		std::cout << vertexShaderSource << std::endl;
-		std::cout << fragmentShaderSource << std::endl;
 		unsigned int vertexShader;
 		vertexShader = glCreateShader(GL_VERTEX_SHADER);
 		glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
@@ -115,6 +116,8 @@ namespace hc {
 	void OpenGLShader::SetUniform2Ints(std::string&& uniformName, int val1, int val2){
 		glUseProgram(mShaderProgram);
 		GLint location{ glGetUniformLocation(mShaderProgram, uniformName.c_str()) };
+		std::cout << val1 << std::endl;
+		std::cout << val2 << std::endl;
 		glUniform2i(location, val1, val2);
 	}
 

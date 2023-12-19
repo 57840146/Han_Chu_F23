@@ -10,6 +10,7 @@ namespace hc {
 			hc_ERROR("Failed to initialize GLAD");
 			return;
 		}
+		std::cout << "success init" << std::endl;
 		glEnable(GL_BLEND);
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	}

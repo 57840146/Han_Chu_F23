@@ -23,7 +23,7 @@ namespace hc {
 	}
 
 	int GameWindow::GetWidth() const{
-		return mImplementation->GetWidth();;
+		return mImplementation->GetWidth();
 	}
 
 	void GameWindow::SwapBuffers(){

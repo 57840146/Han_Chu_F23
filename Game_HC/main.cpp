@@ -9,8 +9,9 @@ public:
 
 	virtual void OnUpdate() override {
 		//std::cout << "running" << std::endl;
-		//Draw(x, y, mPic);
-		Draw(mUnit);
+		Draw(x, y, mPic);
+		//Draw(0, 0, mbackground);
+		//Draw(mUnit);
 	}
 
 	void OnKeyPress(const hc::KeyPressed& e) {
@@ -26,11 +27,11 @@ public:
 		}
 	}
 private:
-	//hc::Picture mPic{ "../Assets/Pictures/test.png"};
-	hc::Unit mUnit{ "../Assets/Pictures/images.png",100,500 };
-
-	int x{ 100 };
-	int y{ 100 };
+	hc::Picture mPic{ "../Assets/Pictures/test.png"};
+	hc::Unit mUnit{ "../Assets/Pictures/images.png",0,0 };
+	hc::Picture mbackground{ "../Assets/Pictures/test4.png" };
+	int x{ 0 };
+	int y{ 0 };
 };
 
 GEHC_APPLICATION_START(MyGame);

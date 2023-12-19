@@ -19,7 +19,6 @@ namespace hc {
 		void UpdateXCoord(int amount);
 		void UpdateYCoord(int amount);
 
-		//Picture mImage;
 	private:
 		Picture mImage;
 		int mXPosition;

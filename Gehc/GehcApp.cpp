@@ -10,7 +10,7 @@ namespace hc {
 
 	template<typename T>
 	GehcApp<T>::GehcApp(){
-		mWindow.Create("Game PS", 1000, 800);
+		mWindow.Create("Game HC", 1000, 800);
 		mRenderer.Init();
 		SetWindowCloseCallback([this]() {DefaultWindowCloseHandler(); });
 	}

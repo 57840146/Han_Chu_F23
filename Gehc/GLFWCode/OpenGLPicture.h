@@ -13,6 +13,8 @@ namespace hc {
 		void Bind() override;
 	private:
 		unsigned int mTexture;
-		int width, height, nrChannels;
+		int width;
+		int height; 
+		int nrChannels;
 	};
 }
