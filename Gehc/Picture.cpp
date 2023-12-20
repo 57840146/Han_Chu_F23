@@ -23,4 +23,5 @@ namespace hc {
 	void Picture::Bind(){
 		mImplementation->Bind();
 	}
+
 }

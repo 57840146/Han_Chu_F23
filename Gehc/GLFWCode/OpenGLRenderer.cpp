@@ -10,9 +10,10 @@ namespace hc {
 			hc_ERROR("Failed to initialize GLAD");
 			return;
 		}
-		std::cout << "success init" << std::endl;
+
 		glEnable(GL_BLEND);
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
 	}
 
 	void OpenGLRenderer::Draw(int x, int y, Picture& pic){
@@ -54,7 +55,7 @@ namespace hc {
 		glBindVertexArray(VAO);
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
-		glDeleteBuffers(1, &VAO);
+		glDeleteBuffers(1, &VBO);
 		glDeleteBuffers(1, &EBO);
 		glDeleteVertexArrays(1, &VAO);
 	}
