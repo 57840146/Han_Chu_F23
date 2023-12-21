@@ -1,0 +1,21 @@
+Overview: Player using arrow key left and right and space for jump, moving around collecting coins or shoes.
+
+
+Player: Player can move left, right, jump. Player can not go out side of screen(left and right and top)
+
+
+Jump system: Player have max jump times(this will effect by shoes). The inital max jump times is 2.
+
+
+Coin: every 1 seconds Functon PlantingCoin() will plant coin in random place
+
+
+CollisionWithCoin: it will using Unit class function UnitsOverlap() to check if Player collision with coin or not, if it is player will get the coin(delete that coin)
+
+
+Shoes:every 7 seconds it will random spawn at the top of the screen, and it will slowly falling down. the player max jump will increase one if player collision with shoes, the effect duration is 10seconds. The effect duration will be reset to 10seconds, if player collision with shoes in 10seconds. it will also delete itself when shoes hit it on the ground
+
+
+CollisionWithShoes: same as CollisionWithCoin()
+
+ 

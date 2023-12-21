@@ -42,9 +42,11 @@ namespace hc {
 
 	bool UnitsOverlap(const Unit& a, const Unit& b){
 		int left_a{ a.mXPosition };
-		int right_a{ a.mYPosition + a.mImage.GetWidth() };
+		int right_a{ a.mXPosition + a.mImage.GetWidth() };
+
 		int left_b{ b.mXPosition };
 		int right_b{ b.mXPosition + b.mImage.GetWidth() };
+
 		bool x_intersection{ (left_a <= left_b and left_b <= right_a) or (left_b <= left_a and left_a <= right_b) };
 
 		int bot_a{ a.mYPosition };

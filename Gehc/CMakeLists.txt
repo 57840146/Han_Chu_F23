@@ -13,7 +13,7 @@ set(HEADER_FILES
 	Picture.h
 	PictureImplementation.h
 	Renderer.h
-	Renderer.Impelemntation.h
+	RendererImplementation.h
 	Shader.h
 	ShaderImplementation.h
 	Unit.h

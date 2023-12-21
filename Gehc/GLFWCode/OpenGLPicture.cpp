@@ -7,18 +7,16 @@
 
 namespace hc {
 
-    OpenGLPicture::OpenGLPicture(const std::string& fileP) {
+    OpenGLPicture::OpenGLPicture(const std::string& fileP){
 
-        unsigned int mTexture;
-        glGenTextures(1, &mTexture);
-    
-        //glBindTexture(GL_TEXTURE_2D, mTexture);
+        glGenTextures(1, &this->mTexture);
+
+        glBindTexture(GL_TEXTURE_2D, mTexture);
 
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
         stbi_set_flip_vertically_on_load(true);
-        //const char* imageF = fileP.c_str();
         unsigned char* data = stbi_load(fileP.c_str(), &width, &height, &nrChannels, 0);
         if (data) {
             glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
@@ -31,7 +29,6 @@ namespace hc {
 	}
 
 	OpenGLPicture::~OpenGLPicture(){
-        std::cout << "delete" << std::endl;
         glDeleteTextures(1, &mTexture);
 	}
 
@@ -44,9 +41,6 @@ namespace hc {
     }
 
     void OpenGLPicture::Bind(){
-        //unsigned int mTexture;
-        //glGenTextures(1, &mTexture);
         glBindTexture(GL_TEXTURE_2D, mTexture);
-        //std::cout <<"texture:"<< mTexture << std::endl;
     }
 }
